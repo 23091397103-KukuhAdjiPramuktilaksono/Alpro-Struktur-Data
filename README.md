@@ -1,1 +1,1 @@
-# Alpro-Struktur-Data
+# Struktur-Data
