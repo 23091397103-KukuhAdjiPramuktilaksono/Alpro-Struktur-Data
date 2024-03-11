@@ -38,7 +38,8 @@ class LinkedList:
             total += current.harga
             current = current.next
         return total
-        
+
+# List menu
 menu_miexue = {
     "Miexue Ice Cream": 5000,
     "Boba Shake": 16000,
