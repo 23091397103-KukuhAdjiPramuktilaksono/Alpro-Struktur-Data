@@ -29,3 +29,28 @@ class LinkedList:
                 print(f"{idx}. {current.nama} {current.harga} rupiah")
                 current = current.next
                 idx += 1
+                
+    def hitung_total_harga(self):
+        # Menghitung total harga pesanan
+        total = 0
+        current = self.head
+        while current:
+            total += current.harga
+            current = current.next
+        return total
+        
+menu_miexue = {
+    "Miexue Ice Cream": 5000,
+    "Boba Shake": 16000,
+    "Mi Sundae": 14000,
+    "Mi Ganas": 11000,
+    "Creamy Mango Boba": 22000
+}
+keranjang = LinkedList()
+
+while True:
+    print("\nPilihan Menu:")
+    print("1. Tambah pesanan ke keranjang")
+    print("2. Tampilkan pesanan yang sudah ditambahkan")
+    print("3. Bayar Pesanan")
+    print("4. Keluar")
