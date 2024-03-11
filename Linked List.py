@@ -47,6 +47,8 @@ menu_miexue = {
     "Mi Ganas": 11000,
     "Creamy Mango Boba": 22000
 }
+
+# Untuk menyimpan pesanan
 keranjang = LinkedList()
 
 while True:
