@@ -54,3 +54,38 @@ while True:
     print("2. Tampilkan pesanan yang sudah ditambahkan")
     print("3. Bayar Pesanan")
     print("4. Keluar")
+
+pilihan = input("Masukkan pilihan Anda: ")
+
+    if pilihan == "1":
+        # Pilihan untuk menambah pesanan
+        print(menu_miexue)
+        pesanan = input("Masukkan pesanan (nama menu): ")
+        if pesanan in menu_miexue:
+            harga = menu_miexue[pesanan]
+            keranjang.tambah_menu(pesanan, harga)
+            print(f"{pesanan} sudah ditambahkan ke keranjang")
+        else:
+            print("Menu tidak tersedia")
+    elif pilihan == "2":
+        # Pilihan untuk menampilkan pesanan yang sudah ditambahkan
+        print("Pesanan yang sudah ditambahkan:")
+        keranjang.tampilkan_pesanan()
+    elif pilihan == "3":
+        # Pilihan untuk membayar pesanan
+        total_harga = keranjang.hitung_total_harga()
+        print(f"Total biaya yang harus dibayarkan adalah {total_harga} rupiah")
+        uang_dibayar = int(input("jumlah uang yang anda bayarkan: "))
+        bayar = uang_dibayar-total_harga
+        if bayar == 0:
+            print("Silahkan pesanannya, Terimakasih sudah membeli")
+        else:
+            print("Ini kembalian anda: ", bayar)
+            print("Terimakasih sudah membeli")
+        break
+    elif pilihan == "4":
+        # Pilihan untuk keluar dari program
+        print("Terimakasih semoga hari mu menyenangkan dan sampai jumpa kembali")
+        break
+    else:
+        print("Pilihan tidak valid")
