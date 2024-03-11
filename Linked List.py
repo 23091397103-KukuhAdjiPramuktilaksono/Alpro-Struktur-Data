@@ -59,7 +59,7 @@ while True:
     print("3. Bayar Pesanan")
     print("4. Keluar")
 
-pilihan = input("Masukkan pilihan Anda: ")
+    pilihan = input("Masukkan pilihan Anda: ")
 
     if pilihan == "1":
         # Pilihan untuk menambah pesanan
@@ -85,7 +85,7 @@ pilihan = input("Masukkan pilihan Anda: ")
             print("Silahkan pesanannya, Terimakasih sudah membeli")
         else:
             print("Ini kembalian anda: ", bayar)
-            print("Terimakasih sudah membeli, sampai jumpa lagi")
+            print("Terimakasih sudah membeli")
         break
     elif pilihan == "4":
         # Pilihan untuk keluar dari program
