@@ -52,6 +52,7 @@ menu_miexue = {
 keranjang = LinkedList()
 
 while True:
+    # Tampilan opsi input yang dipilih
     print("\nPilihan Menu:")
     print("1. Tambah pesanan ke keranjang")
     print("2. Tampilkan pesanan yang sudah ditambahkan")
