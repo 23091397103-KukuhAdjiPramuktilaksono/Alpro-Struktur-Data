@@ -85,7 +85,7 @@ pilihan = input("Masukkan pilihan Anda: ")
             print("Silahkan pesanannya, Terimakasih sudah membeli")
         else:
             print("Ini kembalian anda: ", bayar)
-            print("Terimakasih sudah membeli")
+            print("Terimakasih sudah membeli, sampai jumpa lagi")
         break
     elif pilihan == "4":
         # Pilihan untuk keluar dari program
